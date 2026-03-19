@@ -1,172 +1,321 @@
 <!DOCTYPE html>
-        <head>
-            <meta charset="UTF-8"/>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-            
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-            
-            <link rel="stylesheet" href="style.css">
-            
-            <title>Mari Travel</title>
-        </head>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Mari Travel - Jelajahi Dunia Bersama Kami</title>
+</head>
+<body>
 
-        <body>
-        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top py-3">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3 custom-navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bold">
+                <span class="brand-mari">Mari</span><span class="brand-travel">Travel</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <i class="bi bi-list fs-1 text-dark"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#promo" class="nav-link">Promo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+                        <button id="theme-toggle" class="btn btn-outline-custom rounded-circle p-2 d-flex align-items-center justify-content-center border-0 shadow-sm" style="width: 40px; height: 40px; background: var(--white);" aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+
+    <!-- Header / Hero Section -->
+    <section class="hero-section text-center text-sm-start d-flex align-items-center">
+        <div class="hero-bg-shape"></div>
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="badge-custom mb-3">
+                        <i class="bi bi-airplane-engines-fill me-2"></i> Destinasi Terbaik 2024
+                    </div>
+                    <h1 class="hero-title display-4 fw-bold mb-4">
+                        <span class="gradient-text">Mari</span> Jalan-Jalan,<br>
+                        <span class="gradient-text">Mari</span>Travel
+                    </h1>
+                    <p class="hero-subtitle lead mb-4 text-muted">
+                        Bosan di rumah terus? Yuk jalan-jalan berkeliling dunia. Nikmati berbagai destinasi wisata menarik bersama keluarga, teman, dan kerabat tercinta.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-sm-start mt-4">
+                        <button class="btn btn-primary-custom btn-lg px-4 py-3">Yuk Berangkat! <i class="bi bi-arrow-right ms-2"></i></button>
+                        <a href="#services" class="btn btn-outline-custom btn-lg px-4 py-3">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
                 
-            <div class="container">
-                <a href="#" class="navbar-brand">Mari Travel</a>
-                <button 
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#promo" class="nav-link">Promo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact Us</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="hero-image-wrapper">
+                        <img class="img-fluid floating-img" src="Images/Header.svg" alt="Adventure">
+                    </div>
                 </div>
             </div>
-        </nav>  
+        </div>
+    </section>
 
-        <!-- Header -->
-        <section class="bg-light text-dark text-center text-sm-start pt-5 pb-5 pb-lg-0 mt-5">
-            <div class="container">
-                <div class="d-flex align-items-center">
-                    <div>
-                        <h1><span class="text-primary">Mari</span> Jalan-Jalan, <span class="text-primary">Mari</span>Travel</h1>
-                        <p class="lead">
-                            Bosan? Yuk jalan-jalan berkeliling dunia. Nikmati berbagai wisata yang menarik 
-                            bersama keluarga, teman, dan kerabat.
-                        </p>
-                        <button class="btn btn-primary btn-lg">Yuk Berangkat!</button>
+    <!-- Services -->
+    <section class="services-section py-5" id="services">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase fw-bold text-primary tracking-wide">Layanan Kami</h6>
+                <h2 class="display-6 fw-bold text-dark-custom">Apa yang kami tawarkan?</h2>
+            </div>
+            
+            <div class="row text-center g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0">
+                        <div class="card-icon-wrapper mx-auto mt-4 light-blue-bg">
+                            <img src="Images/Aircraft.svg" class="img-fluid p-3" alt="Pesawat">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold mb-3">Tiket Pesawat</h4>
+                            <p class="card-text text-muted mb-4">Temukan tiket pesawat murah dengan rute terbaik ke berbagai destinasi impian di seluruh dunia.</p>
+                            <a href="#" class="btn btn-outline-primary-custom px-4 py-2 rounded-pill">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 (Highlighted) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card service-card-highlight h-100 border-0 text-white">
+                        <div class="popular-badge">Populer</div>
+                        <div class="card-icon-wrapper mx-auto mt-4 glass-bg">
+                            <img src="Images/Hotel.svg" class="img-fluid p-3" alt="Hotel">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold mb-3">Penginapan</h4>
+                            <p class="card-text mb-4 text-white-50">Booking hotel dan villa mewah yang nyaman untuk pengalaman liburan tak terlupakan anda.</p>
+                            <a href="#" class="btn btn-light-custom text-primary fw-bold px-4 py-2 rounded-pill shadow">Booking Hotel</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0">
+                        <div class="card-icon-wrapper mx-auto mt-4 light-purple-bg">
+                            <img src="Images/Tour.svg" class="img-fluid p-3" alt="Wisata">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold mb-3">Paket Wisata</h4>
+                            <p class="card-text text-muted mb-4">Jelajahi tempat-tempat menakjubkan dengan paket wisata eksklusif yang telah kami sediakan.</p>
+                            <a href="#" class="btn btn-outline-primary-custom px-4 py-2 rounded-pill">Kunjungi Tempat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Promo -->
+    <section class="promo-section position-relative overflow-hidden py-5" id="promo">
+        <div class="promo-bg-decor"></div>
+        <div class="container py-5 position-relative z-1">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="promo-card p-4 p-md-5 rounded-4 shadow-lg text-white d-md-flex align-items-center justify-content-between">
+                        <div class="promo-content pe-md-4 mb-4 mb-md-0">
+                            <h3 class="fw-bold fs-2 mb-2">Dapatkan Promo Menarik!</h3>
+                            <p class="text-white-50 mb-0">Berlangganan newsletter kami untuk info menarik dan diskon hingga 50%.</p>
+                        </div>
+                        <div class="promo-form w-100 flex-shrink-0" style="max-width: 450px;">
+                            <div class="promo-input-wrapper d-flex align-items-center bg-white p-1 rounded-pill shadow-sm">
+                                <span class="text-muted ps-4 pe-2"><i class="bi bi-envelope fs-5"></i></span>
+                                <input type="email" class="form-control border-0 shadow-none bg-transparent px-2" placeholder="Masukkan email anda" style="height: 50px;">
+                                <button class="btn btn-primary-custom text-white fw-bold px-4 rounded-pill m-1" type="button" style="height: 46px;">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Us -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="contact-img-wrapper position-relative inline-block">
+                        <div class="blob-shape"></div>
+                        <img class="img-fluid contact-img floating-img position-relative z-1" src="Images/Contact us.svg" alt="Contact Us">
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="mb-5 text-center text-lg-start">
+                        <h6 class="text-uppercase fw-bold text-primary tracking-wide">Hubungi Kami</h6>
+                        <h2 class="display-6 fw-bold text-dark-custom mb-3">Tetap Terhubung</h2>
+                        <p class="text-muted">Punya pertanyaan seputar layanan kami? Tim kami selalu siap membantu perjalanan liburan anda.</p>
                     </div>
                     
-                    <div>
-                        <img class="img-fluid w-50 d-none d-sm-block" src="Images/Header.svg" alt="Adventure">
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div class="contact-list">
+                        <div class="contact-item d-flex align-items-center mb-4 p-3 rounded-4 shadow-sm bg-white">
+                            <div class="contact-icon bg-light-primary text-primary rounded-circle d-flex align-items-center justify-content-center me-4">
+                                <i class="bi bi-geo-alt-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1 text-dark-custom">Location</h6>
+                                <p class="mb-0 text-muted">Jalan Kebenaran, Nomor 17 Blok A</p>
+                            </div>
+                        </div>
 
-        <!-- Services -->
-        <section class="p-5" id="services">
-            <div class="container">
-                <div class="row text-center g-4">
-                    <div class="col-md">
-                        <div class="card bg-light text-dark border">
-                            <img src="Images/Aircraft.svg" class="card-img-top p-2" alt="Pesawat">
-                            <div class="card-body">
-                              <h5 class="card-title">Tiket</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        <div class="contact-item d-flex align-items-center mb-4 p-3 rounded-4 shadow-sm bg-white">
+                            <div class="contact-icon bg-light-success text-success rounded-circle d-flex align-items-center justify-content-center me-4">
+                                <i class="bi bi-telephone-fill fs-4"></i>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card bg-primary text-light border-0">
-                            <img src="Images/Hotel.svg" class="card-img-top p-2" alt="Hotel">
-                            <div class="card-body">
-                              <h5 class="card-title">Penginapan</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-light text-primary">Booking Hotel</a>
+                            <div>
+                                <h6 class="fw-bold mb-1 text-dark-custom">Mobile Phone</h6>
+                                <p class="mb-0 text-muted">(+62) 838-4581-1325</p>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card bg-light text-dark border">
-                            <img src="Images/Tour.svg" class="card-img-top p-2" alt="Wisata">
-                            <div class="card-body">
-                              <h5 class="card-title">Wisata</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Kunjungi Tempat</a>
+                        </div>
+
+                        <div class="contact-item d-flex align-items-center mb-4 p-3 rounded-4 shadow-sm bg-white">
+                            <div class="contact-icon bg-light-danger text-danger rounded-circle d-flex align-items-center justify-content-center me-4">
+                                <i class="bi bi-instagram fs-4"></i>
                             </div>
-                          </div>
+                            <div>
+                                <h6 class="fw-bold mb-1 text-dark-custom">Instagram</h6>
+                                <p class="mb-0 text-muted">@maritravel</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex align-items-center p-3 rounded-4 shadow-sm bg-white">
+                            <div class="contact-icon bg-light-warning text-warning rounded-circle d-flex align-items-center justify-content-center me-4">
+                                <i class="bi bi-envelope-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1 text-dark-custom">Email</h6>
+                                <p class="mb-0 text-muted">services@maritravel.com</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark-custom text-white position-relative pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center mb-4 pb-4 border-bottom border-secondary">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <a href="#" class="text-white text-decoration-none fs-4 fw-bold font-outfit">
+                        <span class="text-primary-light">Mari</span>Travel
+                    </a>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <div class="social-links d-inline-flex gap-3">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="mb-0 text-white-50">Menjelajah tanpa batas.</p>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0 text-white-50 small">&copy; 2024 MariTravel.com. All rights reserved.</p>
+                <div class="mt-3 mt-md-0">
+                    <a href="#" class="text-white-50 text-decoration-none small me-3 nav-link-hover">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none small nav-link-hover">Terms of Service</a>
+                </div>
+            </div>
+        </div>
         
-        <!-- Promo -->
-        <section class="bg-primary text-light p-5" id="promo">
-            <div class="container">
-                <div class="d-md-flex justify-content-between align-items-center">
-                    <h3>Dapatkan Promo Menarik</h3>
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top shadow-lg">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Theme Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const htmlElement = document.documentElement;
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            // Retrieve saved theme preference
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            htmlElement.setAttribute('data-bs-theme', savedTheme);
+            updateIcon(savedTheme);
+
+            themeToggleBtn.addEventListener('click', function() {
+                const currentTheme = htmlElement.getAttribute('data-bs-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
                 
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Masukkan email anda">
-                        <button class="btn btn-light btn-lg bg-primary text-light" type="button">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Contact Us -->
-        <scetion class="p-5" id="contact">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md">
-                        <h2 class="text-center mb-4">Contact Us</h2>
-                        <ul class="list-group list-group-flush lead">
+                htmlElement.setAttribute('data-bs-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcon(newTheme);
+            });
 
-                            <li class="list-group-item">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                <span class="fw-bold">Location:</span><br>
-                                Jalan Kebenaran, Nomor 17 Blok A
-                            </li>
+            function updateIcon(theme) {
+                if (theme === 'dark') {
+                    themeIcon.classList.remove('bi-moon-fill');
+                    themeIcon.classList.add('bi-sun-fill');
+                    // Sun color for dark mode
+                    themeIcon.style.color = '#FFD43B';
+                } else {
+                    themeIcon.classList.remove('bi-sun-fill');
+                    themeIcon.classList.add('bi-moon-fill');
+                    // Reset color for light mode (uses base font color)
+                    themeIcon.style.color = '';
+                }
+            }
+        });
+    </script>
 
-                            <li class="list-group-item">
-                                <i class="bi bi-telephone-fill"></i>
-                                <span class="fw-bold">Mobile Phone:</span><br>
-                                (+62) 838-4581-1325
-                            </li>
-
-                            <li class="list-group-item">
-                                <i class="bi bi-instagram"></i>
-                                <span class="fw-bold">Instagram:</span><br>
-                                @maritravel
-                            </li>
-
-                            <li class="list-group-item">
-                                <i class="bi bi-envelope-fill"></i>
-                                <span class="fw-bold">Email:</span><br>
-                                services@maritravel.com
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md">
-                        <img class="img-fluid d-none d-sm-block" src="Images/Contact us.svg" alt="Contact Us">
-                    </div>
-                </div>
-            </div>
-        </scetion>
-
-        <!-- Footer -->
-        <footer class="p-5 bg-dark text-white text-center position-relative">
-            <div class="container">
-                <p class="lead">
-                    Copyright &copy; 2024 MariTravel.com
-                </p>
-                <a href="#" class="position absolute bottom-0 end-0 p-5">
-                    <i class="bi bi-arrow-up-circle-fill h1"></i>
-                </a>
-            </div>
-        </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        </body>
+    <!-- Custom Script for Navbar Scrolled effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.custom-navbar');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
